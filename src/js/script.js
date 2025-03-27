@@ -41,7 +41,7 @@ const renderPokemon = async function(pokemon) {
         input.value = ''
         pokemonName.innerHTML = ''
         pokemonNumber.innerHTML = ''
-        inputID.placeholder = 'Não encontrado, tente outro valor..'
+        inputID.placeholder = 'Não encontrado...'
     }
 }
 
