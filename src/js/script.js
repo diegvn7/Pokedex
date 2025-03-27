@@ -30,17 +30,18 @@ const renderPokemon = async function(pokemon) {
     if (data) {
         pokemonName.innerHTML = data.name
         pokemonNumber.innerHTML = data.id
+        pokemonImg.style.display = 'block'
         pokemonImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']
         ['front_default']
         input.value = ''
-        inputID.placeholder = 'Name or Number...'
+        inputID.placeholder = 'Nome ou número...'
         searchPokemnon = data.id
     } else {
         pokemonImg.style.display = 'none'
         input.value = ''
         pokemonName.innerHTML = ''
         pokemonNumber.innerHTML = ''
-        inputID.placeholder = 'Not found, try another value'
+        inputID.placeholder = 'Não encontrado, tente outro valor..'
     }
 }
 
